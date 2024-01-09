@@ -3,13 +3,14 @@ import pyautogui as gui
 import pandas as pd
 
 # Faz uma pausa a cada comando do pyauto gui
-gui.PAUSE = 0.5
+gui.PAUSE = 0.7
 
 # Acessar a página da empresa
 gui.press('win')
 gui.write('edge')
 gui.press('enter')
 
+# Link da página de cadastro dos produtos
 link = 'https://dlp.hashtagtreinamentos.com/python/intensivao/login'
 sleep(3)
 gui.write(link)
@@ -26,9 +27,7 @@ gui.press('enter')
 # Lendo arquivo dos produtos
 tabela = pd.read_csv('produtos.csv')
 
-
 # Cadastrando produto
-
 for linha in tabela.index:
 
     # Código do produto
