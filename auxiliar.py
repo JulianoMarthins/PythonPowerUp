@@ -1,3 +1,9 @@
-import pandas as pd
+import pyautogui as gui
+from time import sleep
 
-tabela = pd.read_csv('produtos.csv')
+
+posi = gui.displayMousePosition()
+
+
+
+print(posi)

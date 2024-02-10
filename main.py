@@ -2,7 +2,7 @@ from time import sleep
 import pyautogui as gui
 import pandas as pd
 
-# Faz uma pausa a cada comando do pyauto gui
+# Faz MOLO000192    Logitech     pausa a cada comando do pyauto gui
 gui.PAUSE = 0.7
 
 # Acessar a página da empresa
@@ -17,11 +17,11 @@ gui.write(link)
 gui.press('enter')
 
 # Realização de login
-gui.click(x=591, y=385) # Localização do mouse configurado para resolução 720p
+gui.click(x=780, y=396) # Localização do mouse configurado para resolução 1080p
 gui.write('JulianoMarthins@Yahoo.com.br')
 gui.press('tab')
 gui.write('123456')
-gui.click(x=685, y=562)
+gui.click(x=939, y=557)
 gui.press('enter')
 
 # Lendo arquivo dos produtos
@@ -31,7 +31,7 @@ tabela = pd.read_csv('produtos.csv')
 for linha in tabela.index:
 
     # Código do produto
-    gui.click(x=529, y=275)
+    gui.click(x=909, y=274)
     codigo = tabela.loc[linha, 'codigo']
     gui.write(codigo)
 
