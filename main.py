@@ -72,5 +72,5 @@ for linha in tabela.index:
     gui.press('enter')
 
     # Retornar ao topo da tela
-    gui.scroll(1000)
+    #gui.scroll(1000) -> Linha comentada pois tornou-se inutei devido ao aumento da resolução de tela
 
